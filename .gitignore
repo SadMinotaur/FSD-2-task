@@ -118,9 +118,5 @@ out
 .pnp.*
 
 .idea
-.idea/.gitignore
-.idea/FSD-2-task.iml
-.idea/misc.xml
-.idea/modules.xml
-.idea/vcs.xml
+.dist
 package-lock.json
