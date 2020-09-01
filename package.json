@@ -1,7 +1,6 @@
 {
   "name": "FSD-2-task",
   "version": "1.0.0",
-  "description": "GitHub Pages: (soon)",
   "main": "index.js",
   "dependencies": {
     "parcel": "^1.12.4",
@@ -13,8 +12,8 @@
     "sass": "^1.26.10"
   },
   "scripts": {
-    "dev": "parcel src/index.pug",
-    "build": "parcel build src/index.pug"
+    "start": "parcel src/index.pug --open",
+    "build": "parcel build src/index.pug -d docs --public-url ./"
   },
   "repository": {
     "type": "git",
@@ -26,5 +25,6 @@
   "bugs": {
     "url": "https://github.com/SadMinotaur/FSD-2-task/issues"
   },
-  "homepage": "https://github.com/SadMinotaur/FSD-2-task#readme"
+  "homepage": "https://github.com/SadMinotaur/FSD-2-task#readme",
+  "description": "GitHub Pages: https://sadminotaur.github.io/FSD-2-task-page/"
 }

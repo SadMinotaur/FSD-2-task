@@ -118,5 +118,5 @@ out
 .pnp.*
 
 .idea
-.dist
+dist
 package-lock.json
