@@ -1,14 +1,13 @@
-include ../../small/inputbox/inputbox
+include ../../sharedElements/inputbox/inputbox
 
 style
   include login.scss
 
 mixin login()
-    -
+  -
       var log = "login"
-.login
-  .border
-    .loginText Войти
-    div(class = "inputBox")
-      p(class = "inputBoxText") Email
-
+  .login
+    .border
+      .loginText Войти
+      +inputBox("Email")
+      +inputBox("Пароль")
