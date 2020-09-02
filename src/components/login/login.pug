@@ -1,5 +1,11 @@
 style
-    include login.scss
+  include login.scss
 
-h1 test
-h2 test
+mixin login()
+    -
+      var log = "login"
+.login
+  div(class = "login border")
+    p(class = "loginText") Войти
+    div(class = "emailRectangle")
+      p(class = "emailText") Email
