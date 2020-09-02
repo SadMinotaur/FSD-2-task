@@ -1,13 +1,17 @@
 include ../../sharedElements/inputbox/inputbox
+include ../../sharedElements/gradientbutton/button
+include ../../sharedElements/text/text
+include ../../sharedElements/whitebutton/button
 
 style
   include login.scss
 
 mixin login()
-  -
-      var log = "login"
   .login
     .border
       .loginText Войти
       +inputBox("Email")
       +inputBox("Пароль")
+      +gradientButton()
+      +text("Нет аккаунта на Toxin?")
+      +whiteButton("Создать")
