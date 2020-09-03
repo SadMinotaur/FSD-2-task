@@ -1,0 +1,39 @@
+.main {
+  position: relative;
+  width: 1440px;
+  height: 900px;
+  background: #FFFFFF;
+}
+
+.darkShade100 {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  left: 150px;
+  top: 145px;
+  background: #1F2041;
+  border-radius: 6px;
+}
+
+.darkShadeText100 {
+  position: absolute;
+  width: 159px;
+  height: 57px;
+  left: 260px;
+  top: 152px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 29px;
+  display: flex;
+  align-items: center;
+  color: #1F2041;
+}
+
+.darkShade70 {
+  left: 150px;
+  top: 235px;
+  background: rgba(31, 32, 65, 0.75);
+}
+
