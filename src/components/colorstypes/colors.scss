@@ -5,22 +5,15 @@
   background: #FFFFFF;
 }
 
-.darkShade100 {
+.defaultBox {
+  border-radius: 6px;
   width: 70px;
   height: 70px;
   position: absolute;
-  left: 150px;
-  top: 145px;
-  background: #1F2041;
-  border-radius: 6px;
 }
 
-.darkShadeText100 {
+.defaultText {
   position: absolute;
-  width: 159px;
-  height: 57px;
-  left: 260px;
-  top: 152px;
   font-family: "Open Sans";
   font-style: normal;
   font-weight: bold;
@@ -31,9 +24,93 @@
   color: #1F2041;
 }
 
+.darkShade100 {
+  left: 150px;
+  top: 145px;
+  background: #1F2041;
+}
+
+.darkShadeText100 {
+  width: 159px;
+  height: 57px;
+  left: 260px;
+  top: 152px;
+}
+
 .darkShade70 {
   left: 150px;
   top: 235px;
   background: rgba(31, 32, 65, 0.75);
 }
 
+.darkShadeText70 {
+  width: 150px;
+  height: 57px;
+  left: 260px;
+  top: 242px;
+}
+
+.darkShade50 {
+  left: 149.74px;
+  top: 324.56px;
+  background: rgba(31, 32, 65, 0.5);
+}
+
+.darkShadeText50 {
+  width: 151px;
+  height: 57px;
+  left: 260px;
+  top: 332px;
+}
+
+.darkShade25 {
+  left: 150px;
+  top: 415px;
+  background: rgba(31, 32, 65, 0.25);
+}
+
+.darkShadeText25 {
+  width: 149px;
+  height: 57px;
+  left: 260px;
+  top: 422px;
+}
+
+.darkShade5 {
+  left: 150px;
+  top: 505px;
+  background: rgba(31, 32, 65, 0.05);
+}
+
+.darkShadeText5 {
+  width: 139px;
+  height: 58px;
+  left: 260px;
+  top: 511px;
+}
+
+.purple {
+  left: 150px;
+  top: 595px;
+  background: #BC9CFF;
+}
+
+.purpleText{
+  width: 82px;
+  height: 58px;
+  left: 260px;
+  top: 601px;
+}
+
+.green {
+  left: 150px;
+  top: 685px;
+  background: #6FCF97;
+}
+
+.greenText {
+  width: 77px;
+  height: 57px;
+  left: 260px;
+  top: 692px;
+}

@@ -1,7 +1,20 @@
 style
   include colors.scss
+  include textStyles.scss
 
 mixin colorsTypes()
   .main
-    .darkShade100
-    .darkShadeText100 Dark shade 100% #1F2041
+    div(class = "defaultBox darkShade100 ")
+    p(class = "defaultText darkShadeText100") Dark shade 100% #1F2041
+    div(class = "defaultBox  darkShade70")
+    p(class = "defaultText darkShadeText70") Dark shade 70% #1F2041
+    div(class = "defaultBox  darkShade50")
+    p(class = "defaultText darkShadeText50") Dark shade 50% #1F2041
+    div(class = "defaultBox  darkShade25")
+    p(class = "defaultText darkShadeText25") Dark shade 25% #1F2041
+    div(class = "defaultBox  darkShade5")
+    p(class = "defaultText darkShadeText5") Dark shade 5% #1F2041
+    div(class = "defaultBox  purple")
+    p(class = "defaultText purpleText") Purple #BC9CFF
+    div(class = "defaultBox  green")
+    p(class = "defaultText greenText") Green #6FCF97
