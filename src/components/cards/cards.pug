@@ -1,4 +1,6 @@
 include login/login
+include findcard/findcard
+include paycard/payCard
 
 style
   include cards.scss
@@ -6,3 +8,5 @@ style
 mixin cards()
   .cards
     +login
+    +findCard
+    +payCard
