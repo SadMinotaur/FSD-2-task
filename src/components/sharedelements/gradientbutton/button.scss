@@ -4,7 +4,10 @@
   height: 44px;
   background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
   border-radius: 22px;
-  margin: 12px 30px 106px 30px;
+  left: 30px;
+  top: 208px;
+  bottom: 106px;
+  right: 30px;
 }
 
 .insideText {
@@ -18,7 +21,10 @@
   text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
-  margin: 14px 20px 15px 20px;
+  left: 20px;
+  right: 20px;
+  top: 14px;
+  bottom: 15px;
 }
 
 .arrow {
@@ -34,5 +40,5 @@
   align-items: center;
   text-align: center;
   color: #FFFFFF;
-  margin: 0px 0px 0px 276px ;
+  left: 276px;
 }
