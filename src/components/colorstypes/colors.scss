@@ -5,8 +5,12 @@
   background: #FFFFFF;
 }
 
-.defaultBox {
+@mixin d(){
   border-radius: 6px;
+}
+
+.defaultBox {
+  @include d;
   width: 70px;
   height: 70px;
   position: absolute;
