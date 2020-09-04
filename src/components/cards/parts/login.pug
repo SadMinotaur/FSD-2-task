@@ -1,13 +1,14 @@
-include ../../sharedelements/inputbox/inputbox
-include ../../sharedelements/gradientbutton/button
-include ../../sharedelements/text/text
-include ../../sharedelements/whitebutton/button
+include ../../sharedelements/inputbox/Inputbox
+include ../../sharedelements/gradientbutton/Button
+include ../../sharedelements/text/Text
+include ../../sharedelements/whitebutton/Button
+include ../../sharedelements/boldtext/BoldText
 
 link(rel="stylesheet" href="./components/cards/cards.scss")
 
 mixin login()
     .loginBorder
-        .loginText Войти
+        +boldText()
         +inputBox("Email")
         +inputBox("Пароль")
         +gradientButton()
