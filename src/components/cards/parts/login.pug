@@ -1,0 +1,15 @@
+include ../../sharedelements/inputbox/inputbox
+include ../../sharedelements/gradientbutton/button
+include ../../sharedelements/text/text
+include ../../sharedelements/whitebutton/button
+
+link(rel="stylesheet" href="./components/cards/cards.scss")
+
+mixin login()
+    .loginBorder
+        .loginText Войти
+        +inputBox("Email")
+        +inputBox("Пароль")
+        +gradientButton()
+        +text("Нет аккаунта на Toxin?")
+        +whiteButton("Создать")
