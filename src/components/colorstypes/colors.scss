@@ -5,18 +5,14 @@
   background: #FFFFFF;
 }
 
-@mixin d(){
+@mixin defaultBox() {
   border-radius: 6px;
-}
-
-.defaultBox {
-  @include d;
   width: 70px;
   height: 70px;
   position: absolute;
 }
 
-.defaultText {
+@mixin defaultText {  
   position: absolute;
   font-family: Quicksand;
   font-style: normal;
@@ -29,12 +25,14 @@
 }
 
 .darkShade100 {
+  @include defaultBox();
   left: 150px;
   top: 145px;
   background: #1F2041;
 }
 
 .darkShadeText100 {
+  @include defaultText();
   width: 159px;
   height: 57px;
   left: 260px;
@@ -42,12 +40,14 @@
 }
 
 .darkShade75 {
+  @include defaultBox();
   left: 150px;
   top: 235px;
   background: rgba(31, 32, 65, 0.75);
 }
 
 .darkShadeText75 {
+  @include defaultText();
   width: 150px;
   height: 57px;
   left: 260px;
@@ -55,12 +55,14 @@
 }
 
 .darkShade50 {
+  @include defaultBox();
   left: 149.74px;
   top: 324.56px;
   background: rgba(31, 32, 65, 0.5);
 }
 
 .darkShadeText50 {
+  @include defaultText();
   width: 151px;
   height: 57px;
   left: 260px;
@@ -68,12 +70,14 @@
 }
 
 .darkShade25 {
+  @include defaultBox();
   left: 150px;
   top: 415px;
   background: rgba(31, 32, 65, 0.25);
 }
 
 .darkShadeText25 {
+  @include defaultText();
   width: 149px;
   height: 57px;
   left: 260px;
@@ -81,12 +85,14 @@
 }
 
 .darkShade5 {
+  @include defaultBox();
   left: 150px;
   top: 505px;
   background: rgba(31, 32, 65, 0.05);
 }
 
 .darkShadeText5 {
+  @include defaultText();
   width: 139px;
   height: 58px;
   left: 260px;
@@ -94,12 +100,14 @@
 }
 
 .purple {
+  @include defaultBox();
   left: 150px;
   top: 595px;
   background: #BC9CFF;
 }
 
 .purpleText{
+  @include defaultText();
   width: 82px;
   height: 58px;
   left: 260px;
@@ -107,12 +115,14 @@
 }
 
 .green {
+  @include defaultBox();
   left: 150px;
   top: 685px;
   background: #6FCF97;
 }
 
 .greenText {
+  @include defaultText();
   width: 77px;
   height: 57px;
   left: 260px;
