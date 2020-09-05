@@ -1,7 +1,14 @@
 link(rel="stylesheet" href="./components/sharedelements/gradientbutton/button.scss")
 
-mixin gradientButton()
+mixin gradientButton(text)
   .gradientbutton
-    div(class = "buttonLogin")
-      .arrow 🡢
-      p(class = "insideText") Войти
+    case text
+      when "Войти"
+        .buttonLogin
+          p(class = "insideText")= text
+          .arrow 🡢
+      when "Перейти к оплате"
+        .buttonToPayment
+          p(class = "insideText")= text
+          .arrow 🡢
+

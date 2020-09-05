@@ -14,6 +14,10 @@
   @include buttonGradient(208px, 30px);
 }
 
+.buttonToPayment {
+  @include buttonGradient(498px, 30px)
+}
+
 .insideText {
   position: absolute;
   width: 280px;
