@@ -1,9 +1,13 @@
 include parts/login
 include parts/findcard
 include parts/payCard
+include parts/regCard
+include parts/calendar
 
 mixin cards()
-    .cards
-        +login({test: 'test', test: "test"})
-        +findCard({test: 'test', test: "test"})
-        +payCard({test: 'test', test: "test"})
+  .cards
+    +login()
+    +findCard()
+    +payCard()
+    +regCard()
+    +calendar()

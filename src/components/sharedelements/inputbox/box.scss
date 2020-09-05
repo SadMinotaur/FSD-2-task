@@ -1,10 +1,14 @@
-.inputBox {
-  margin: 10px 30px 10px 30px;
-  top: 93px;
+@mixin inputBox($left, $right, $top, $bottom) {
+  margin: $top $right $bottom $left;
+  right: 30px;
   background: #FFFFFF;
   border: 1px solid rgba(31, 32, 65, 0.25);
   box-sizing: border-box;
   border-radius: 4px;
+}
+
+.loginBox {
+  @include inputBox(30px, 30px, 10px, 10px)
 }
 
 .inputBoxText {

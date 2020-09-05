@@ -23,9 +23,31 @@
 }
 
 .findBorder {
-  @include border(140px, 150px, 358px, 380px)
+  @include border(140px, 150px, 374px, 380px);
 }
 
 .payCard {
-  @include border(560px, 150px, 358px, 380px)
+  @include border(560px, 150px, 511px, 380px);
+}
+
+.regCard {
+  @include border(140px, 564px, 646px, 380px);
+}
+
+.calendarCard {
+  @include border(980px, 150px, 369px, 320px);
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+}
+
+//TODO: Add mixin
+
+.picture {
+  position: absolute;
+  width: 270px;
+  height: 257px;
+  left: 980px;
+  top: 559.5px;
+  background: #FFFFFF;
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  border-radius: 4px;
 }
