@@ -7,10 +7,10 @@ include ../../sharedelements/boldtext/BoldText
 link(rel="stylesheet" href="./components/cards/cards.scss")
 
 mixin login(options)
-    .loginBorder
-        +boldText()
-        +inputBox("Email")
-        +inputBox("Пароль")
-        +gradientButton()
-        +text("Нет аккаунта на Toxin?")
-        +whiteButton("Создать")
+  .loginBorder
+    +boldText("Войти")
+    +inputBox("Email")
+    +inputBox("Пароль")
+    +gradientButton()
+    +text("Нет аккаунта на Toxin?")
+    +whiteButton("Создать")

@@ -1,0 +1,19 @@
+include ../../sharedelements/boldtext/BoldText
+include ../../sharedelements/inputbox/Inputbox
+include ../../sharedelements/radiobutton/RadioButton
+include ../../sharedelements/whitebutton/Button
+include ../../sharedelements/gradientbutton/Button
+
+link(rel="stylesheet" href="./components/cards/cards.scss")
+
+mixin regCard(options)
+  .regCard
+    +boldText("Регистрация аккаунта")
+    +inputBox("Имя")
+    +inputBox("Фамилия")
+    +radioButton()
+    +inputBox("ДД.ММ.ГГГГ")
+    +inputBox("Email")
+    +inputBox("Пароль")
+    +gradientButton("ПЕРЕЙТИ К ОПЛАТЕ")
+    +whiteButton("Войти")

@@ -1,0 +1,13 @@
+include parts/Login
+include parts/Findcard
+include parts/PayCard
+include parts/RegCard
+include parts/Calendar
+
+mixin cards()
+  .cards
+    +login()
+    +findCard()
+    +payCard()
+    +regCard()
+    +calendar()
