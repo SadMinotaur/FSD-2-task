@@ -1,13 +1,17 @@
-.buttonGradient {
+@mixin buttonGradient($top, $left) {
   position: absolute;
   width: 320px;
   height: 44px;
   background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
   border-radius: 22px;
-  left: 30px;
-  top: 208px;
+  left: $left;
+  top: $top;
   bottom: 106px;
   right: 30px;
+}
+
+.buttonLogin {
+  @include buttonGradient(208px, 30px);
 }
 
 .insideText {
