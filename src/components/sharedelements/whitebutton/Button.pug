@@ -1,5 +1,11 @@
 link(rel="stylesheet" href="./components/sharedelements/whitebutton/button.scss")
 
 mixin whiteButton(arg)
-  button(class = "whiteButton")
-    .whiteButtonText=arg
+  .whiteButton
+    case arg
+      when "Создать"
+        button(class = "whiteButtonCreate")
+          .whiteButtonText=arg
+      when "Войти"
+        button(class = "whiteButtonEnter")
+          .whiteButtonText=arg

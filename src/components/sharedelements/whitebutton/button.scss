@@ -1,10 +1,23 @@
-.whiteButton {
+.whiteButtonCreate {
   position: absolute;
   width: 99px;
   height: 44px;
   border-radius: 22px;
   top: 282px;
   left: 251px;
+  right: 30px;
+  bottom: 32px;
+  border-color: #BC9CFF;
+  background: #FFFFFF;
+}
+
+.whiteButtonEnter {
+  position: absolute;
+  width: 99px;
+  height: 44px;
+  border-radius: 22px;
+  left: 251px;
+  top: 572px;
   right: 30px;
   bottom: 32px;
   border-color: #BC9CFF;
