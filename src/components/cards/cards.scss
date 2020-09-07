@@ -6,6 +6,7 @@
 }
 
 @mixin border($left, $top, $height, $width) {
+  padding: 30px;
   position: absolute;
   width: $width;
   height: $height;

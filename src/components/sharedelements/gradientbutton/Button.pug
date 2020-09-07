@@ -1,13 +1,6 @@
 link(rel="stylesheet" href="./components/sharedelements/gradientbutton/button.scss")
 
 mixin gradientButton(text)
-  .gradientbutton
-    case text
-      when "Войти"
-        .buttonLogin
-          p(class = "insideText")= text
-          .arrow 🡢
-      when "Перейти к оплате"
-        .buttonToPayment
-          p(class = "insideText")= text
-          .arrow 🡢
+  .buttonLogin
+    p(class = "insideText")= text
+    .arrow 🡢
