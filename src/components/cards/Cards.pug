@@ -4,10 +4,14 @@ include parts/PayCard
 include parts/RegCard
 include parts/Calendar
 
-mixin cards()
-  .cards
-    +login()
-    +findCard()
-    +payCard()
-    +regCard()
-    +calendar()
+html(lang="en")
+  head
+    link(rel="stylesheet" href="/../../index.css")
+    meta(charset="UTF-8")
+  body
+    .cards
+      +login()
+      +findCard()
+      +payCard()
+      +regCard()
+      +calendar()
