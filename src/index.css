@@ -61,3 +61,10 @@ table {
   url("fonts/Quicksand-SemiBold.ttf") format("ttf"),
   url("fonts/Quicksand-SemiBold.otf") format("otf");
 }
+
+@font-face {
+  font-family: Quicksand-Regular;
+  src: url("fonts/Quicksand-Regular.woff") format("woff"),
+  url("fonts/Quicksand-Regular.ttf") format("ttf"),
+  url("fonts/Quicksand-Regular.otf") format("otf");
+}
