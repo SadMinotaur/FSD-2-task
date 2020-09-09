@@ -1,10 +1,15 @@
-include components/colorstypes/colorsTypes
-
 doctype html
 
 html(lang="en")
   head
-    link(rel="stylesheet" href="./index.css")
+    //link(rel="stylesheet" href="/index.css")
     meta(charset="UTF-8")
   body
-    +colorsTypes()
+    h1 Figma parts:
+    ul
+      li
+        a(href = "./colorstypes/ColorsTypes.pug") Color types
+      li
+        a(href = "./cards/Cards.pug") Cards
+      li
+        a(href = "./formelements/Elements.pug") Elements

@@ -4,14 +4,16 @@ include parts/PayCard
 include parts/RegCard
 include parts/Calendar
 
+doctype html
+
 html(lang="en")
   head
-    link(rel="stylesheet" href="/../../index.css")
+    link(rel="stylesheet" href="/index.css")
     meta(charset="UTF-8")
+    title Cards
   body
-    .cards
-      +login()
-      +findCard()
-      +payCard()
-      +regCard()
-      +calendar()
+    +login()
+    +findCard()
+    +payCard()
+    +regCard()
+    +calendar()
