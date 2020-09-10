@@ -48,6 +48,10 @@ table {
   border-spacing: 0;
 }
 
+.formElements {
+  padding: 141px;
+}
+
 @font-face {
   font-family: Montserrat;
   src: url("fonts/Montserrat-Medium.woff") format("woff"),

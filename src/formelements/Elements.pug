@@ -1,8 +1,12 @@
+include ../sharedelements/InputForm
+
 doctype html
 
 html(lang="en")
-    head
-        link(rel="stylesheet" href="/index.css")
-        meta(charset="UTF-8")
-        title Elements
-    body
+  head
+    link(rel="stylesheet" href="/index.css")
+    meta(charset="UTF-8")
+    title Elements
+  body
+    .formElements
+      +inputBox()
