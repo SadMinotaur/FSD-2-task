@@ -1,29 +1,33 @@
-
-
 doctype html
+
+mixin shadesText(main,second)
+  .shadesText
+    p(class = "shadeTextMain")=main
+    p(class = "shadeTextSecond")=second
 
 html(lang="en")
   head
-    link(rel="stylesheet" href="./colors.scss")
+    link(rel="stylesheet" href="./colors.sass")
     link(rel="stylesheet" href="/index.scss")
     meta(charset="UTF-8")
   body
+    img(class="icon" src="/pics/Icon.svg")
     .main
-      .darkShade100
-      p(class = "darkShadeText100") Dark Shade 100% #1F2041
-      .darkShade75
-      p(class = "darkShadeText75") Dark Shade 75% #1F2041
-      .darkShade50
-      p(class = "darkShadeText50") Dark Shade 50% #1F2041
-      .darkShade25
-      p(class = "darkShadeText25") Dark Shade 25% #1F2041
-      .darkShade5
-      p(class = "darkShadeText5") Dark Shade 5% #1F2041
-      .purple
-      p(class = "purpleText") Purple #BC9CFF
-      .green
-      p(class = "greenText") Green #6FCF97
-      .mainRect
+      .shadesColumn
+        .darkShade100
+        +shadesText("Dark Shade 100%", " #1F2041")
+        .darkShade75
+        +shadesText("Dark Shade 75%", " #1F2041")
+        .darkShade50
+        +shadesText("Dark Shade 50%", " #1F2041")
+        .darkShade25
+        +shadesText("Dark Shade 25%", " #1F2041")
+        .darkShade5
+        +shadesText("Dark Shade 5%", "#1F2041")
+        .purple
+        +shadesText("Purple", "#BC9CFF")
+        .green
+        +shadesText("Green", "#6FCF97")
       h1(class = "h1") H1
       h2(class = "h2") H2
       h3(class = "h3") H3
