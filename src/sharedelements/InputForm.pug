@@ -1,15 +1,17 @@
-link(rel="stylesheet" href="/sharedelements/box.scss")
+link(rel="stylesheet" href="/sharedelements/box.sass")
 
-mixin inputBox(options)
+mixin customBox(options)
   -
-  .inputBox
-    .formContainer
+  div(class = "formContainer" style="width: "+options.width)
       table(class = "topText")
         th(class = "topTextColumnLeft")= options.left
         th(class = "topTextColumnRight")= options.right
       if options.arrow === true
-        .arrowBox= options.placeholder
+        .test
+          input(class = "inputBox" placeholder=options.placeholder)
           .select-arrow expand_more
+        //.test
+          .arrowBox= options.placeholder
+            .select-arrow expand_more
       else
         input(class = "inputBox" placeholder=options.placeholder)
-

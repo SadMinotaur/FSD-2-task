@@ -9,9 +9,25 @@ html(lang="en")
     meta(charset="UTF-8")
     title Elements
   body(class= "formElements")
-    table
-      th
-        +inputBox({left: "TEXT FIELD", right: "DEFAULT", placeholder: "  Email"})
-        +inputBox({left: "TEXT FIELD", right: "HOVER / FOCUS", placeholder: "  This is pretty awesome"})
-        +inputBox({left: "DROPDOWN", right: "DEFAULT", placeholder: "  Список гостей", arrow: true})
-        +inputBox({left: "MASKED TEXT FIELD", right: "DEFAULT", placeholder: "  ДД.ММ.ГГГГ"})
+    img(class="icon" src="/pics/Icon.svg")
+    +customBox({
+      left: "TEXT FIELD",
+      right: "DEFAULT",
+      placeholder: "   Email"
+    })
+    +customBox({
+      left: "TEXT FIELD",
+      right: "HOVER / FOCUS",
+      placeholder: "    This is pretty awesome"})
+    +customBox({
+      width: "300px",
+      left: "DROPDOWN",
+      right: "DEFAULT",
+      placeholder: "  Список гостей",
+      arrow: true
+    })
+    +customBox({
+      left: "MASKED TEXT FIELD",
+      right: "DEFAULT",
+      placeholder: "    ДД.ММ.ГГГГ"
+    })
