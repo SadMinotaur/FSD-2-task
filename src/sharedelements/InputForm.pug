@@ -6,10 +6,15 @@ mixin customBox(options)
       table(class = "topText")
         th(class = "topTextColumnLeft")= options.left
         th(class = "topTextColumnRight")= options.right
-      if options.arrow === true
+      if options.arrow === "simple"
         .borderInputBox
-          input(class = "inputBox" placeholder=options.placeholder)
+          input(disabled class = "inputBoxArrow" placeholder=options.placeholder)
           .select-arrow expand_more
       else
-        .borderInputBox
+        if options.arrow === "purple"
+          .borderInputBox
+            input(disabled class = "inputBoxArrow" placeholder=options.placeholder)
+            .gradientArrow arrow_forward
+        else
+          .borderInputBox
             input(class = "inputBox" placeholder=options.placeholder)

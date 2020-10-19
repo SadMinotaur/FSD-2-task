@@ -45,21 +45,41 @@
   height: 42px
   display: flex
   justify-content: space-between
+  align-items: center
   border: 1px solid $darkShade25
   border-radius: 4px
   width: 100%
+  color: $darkShade75
 
 .borderInputBox:hover
   border: 1px solid $darkShade50
-  color: $darkShade50
 
-.inputBox
+@mixin input()
   height: 42px
   text-indent: 13px
-  border: 0
-  width: 75%
-  font-family: Montserrat
   font-size: 14px
   line-height: 24px
-  color: $darkShade25
   border-radius: 4px
+  border: 0
+  font-family: Montserrat
+
+.inputBox
+  @include input()
+  width: 100%
+  color: $darkShade25
+
+.inputBoxArrow
+  @include input()
+  width: 75%
+  color: $darkShade75
+  background: white
+
+.inputBox:hover
+  color: $darkShade75
+
+.gradientArrow
+  width: 44px
+  text-align: center
+  font-family: Material Icons
+  font-size: 20px
+  color: $purple
