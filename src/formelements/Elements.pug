@@ -5,6 +5,7 @@ doctype html
 html(lang="en")
   head
     link(rel="stylesheet" href="/index.scss")
+    link(rel="stylesheet" href="/formelements/elements.sass")
     link(rel="stylesheet", href="https://fonts.googleapis.com/icon?family=Material+Icons")
     meta(charset="UTF-8")
     title Elements
@@ -13,21 +14,33 @@ html(lang="en")
     +customBox({
       left: "TEXT FIELD",
       right: "DEFAULT",
-      placeholder: "   Email"
+      placeholder: "Email"
     })
     +customBox({
       left: "TEXT FIELD",
       right: "HOVER / FOCUS",
-      placeholder: "    This is pretty awesome"})
+      placeholder: "This is pretty awesome"})
     +customBox({
-      width: "300px",
       left: "DROPDOWN",
       right: "DEFAULT",
-      placeholder: "  Список гостей",
+      placeholder: "Список гостей",
       arrow: true
     })
     +customBox({
       left: "MASKED TEXT FIELD",
       right: "DEFAULT",
-      placeholder: "    ДД.ММ.ГГГГ"
+      placeholder: "ДД.ММ.ГГГГ"
     })
+    .dateInputBoxes
+      +customBox({
+        width: "150px",
+        left: "DATE DROPDOWN",
+        placeholder: "ДД.ММ.ГГГГ",
+        arrow: true
+      })
+      +customBox({
+        width: "150px",
+        left: "DATE DROPDOWN",
+        placeholder: "19.08.2019",
+        arrow: true
+      })

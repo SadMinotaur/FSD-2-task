@@ -7,11 +7,9 @@ mixin customBox(options)
         th(class = "topTextColumnLeft")= options.left
         th(class = "topTextColumnRight")= options.right
       if options.arrow === true
-        .test
+        .borderInputBox
           input(class = "inputBox" placeholder=options.placeholder)
           .select-arrow expand_more
-        //.test
-          .arrowBox= options.placeholder
-            .select-arrow expand_more
       else
-        input(class = "inputBox" placeholder=options.placeholder)
+        .borderInputBox
+            input(class = "inputBox" placeholder=options.placeholder)

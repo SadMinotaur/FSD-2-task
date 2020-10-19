@@ -47,6 +47,17 @@ table {
   border-spacing: 0;
 }
 
+button {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+button {
+  outline: none;
+}
+
 .formElements {
   padding: 141px;
 }
