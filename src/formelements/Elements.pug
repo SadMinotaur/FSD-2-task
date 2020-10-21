@@ -7,6 +7,8 @@ html(lang="en")
     link(rel="stylesheet" href="/index.scss")
     link(rel="stylesheet" href="/formelements/elements.sass")
     link(rel="stylesheet", href="https://fonts.googleapis.com/icon?family=Material+Icons")
+    script(src="./../../node_modules/jquery/dist/jquery.js")
+    script(src="./../index.js")
     meta(charset="UTF-8")
     title Elements
   body(class= "formElements")
@@ -56,4 +58,19 @@ html(lang="en")
         left: "SUBSCRIPTION TEXT FIELD",
         placeholder: "Email",
         arrow: "purple"
+      })
+    .expandDrpwn
+      +customBox({
+        width: "266px",
+        left: "DROPDOWN",
+        right: "DEFAULT",
+        placeholder: "2 спальни, 2 кровати...",
+        arrow: "simple"
+      })
+      +customBox({
+        width: "266px",
+        left: "DROPDOWN",
+        right: "EXPANDED",
+        placeholder: "2 спальни, 2 кровати...",
+        arrow: "simple"
       })

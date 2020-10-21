@@ -1,20 +1,19 @@
 link(rel="stylesheet" href="/sharedelements/box.sass")
 
 mixin customBox(options)
-  -
-  div(class = "formContainer" style="width: "+options.width)
-      table(class = "topText")
-        th(class = "topTextColumnLeft")= options.left
-        th(class = "topTextColumnRight")= options.right
-      if options.arrow === "simple"
-        .borderInputBox
-          input(disabled class = "inputBoxArrow" placeholder=options.placeholder)
-          .select-arrow expand_more
-      else
+    div(class = "formContainer" style="width: " + options.width)
+        table(class = "topText")
+            th(class = "topTextColumnLeft")= options.left
+            th(class = "topTextColumnRight")= options.right
+        if options.arrow === "simple"
+            .borderInputBox
+                input(disabled class = "inputBoxArrow" placeholder=options.placeholder)
+                .select-arrow expand_more
+            .arrowDropdownMenu
         if options.arrow === "purple"
-          .borderInputBox
-            input(disabled class = "inputBoxArrow" placeholder=options.placeholder)
-            .gradientArrow arrow_forward
-        else
-          .borderInputBox
-            input(class = "inputBox" placeholder=options.placeholder)
+            .borderInputBox
+                input(class = "inputBoxArrow" placeholder=options.placeholder)
+                .gradientArrow arrow_forward
+        if options.arrow === undefined
+            .borderInputBox
+                input(class = "inputBox" placeholder=options.placeholder)

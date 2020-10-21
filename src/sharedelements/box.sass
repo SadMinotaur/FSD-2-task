@@ -54,7 +54,7 @@
 .borderInputBox:hover
   border: 1px solid $darkShade50
 
-@mixin input()
+@mixin input($width,$color)
   height: 42px
   text-indent: 13px
   font-size: 14px
@@ -62,17 +62,15 @@
   border-radius: 4px
   border: 0
   font-family: Montserrat
+  background: white
+  width: $width
+  color: $color
 
 .inputBox
-  @include input()
-  width: 100%
-  color: $darkShade25
+  @include input(100%,$darkShade25)
 
 .inputBoxArrow
-  @include input()
-  width: 75%
-  color: $darkShade75
-  background: white
+  @include input(75%,$darkShade75)
 
 .inputBox:hover
   color: $darkShade75
@@ -83,3 +81,7 @@
   font-family: Material Icons
   font-size: 20px
   color: $purple
+
+.arrowDropdownMenu
+  height: 200px
+  width: 100px
