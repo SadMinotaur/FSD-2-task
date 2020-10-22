@@ -1,15 +1,27 @@
+include ../sharedelements/BoldText
+
 link(rel="stylesheet" href="/sharedelements/box.sass")
 
 mixin customBox(options)
+    -
+        if (options.id !== undefined) {
+            var idArrow = "arrow" + options.id;
+            var idMenu = "menu" + options.id;
+            var idBorder = "border" + options.id;
+        }
     div(class = "formContainer" style="width: " + options.width)
         table(class = "topText")
             th(class = "topTextColumnLeft")= options.left
             th(class = "topTextColumnRight")= options.right
         if options.arrow === "simple"
-            .borderInputBox
-                input(disabled class = "inputBoxArrow" placeholder=options.placeholder)
-                .select-arrow expand_more
-            .arrowDropdownMenu
+            div(id = idBorder class="borderInputBox")
+                input(disabled class="inputBoxArrow" placeholder=options.placeholder)
+                div(class="select-arrow" id=idArrow) expand_more
+            div(class="arrowDropdownMenu" id=idMenu style="width: " + options.width)
+                if options.itemMap !== undefined
+                    each val, key in options.itemMap
+                        .arrowDropdownMenuMargin
+                            //+boldText({text: "Спальни"})
         if options.arrow === "purple"
             .borderInputBox
                 input(class = "inputBoxArrow" placeholder=options.placeholder)
