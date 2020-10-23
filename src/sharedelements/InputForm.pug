@@ -1,4 +1,5 @@
 include ../sharedelements/BoldText
+include ../sharedelements/circles
 
 link(rel="stylesheet" href="/sharedelements/box.sass")
 
@@ -18,10 +19,15 @@ mixin customBox(options)
                 input(disabled class="inputBoxArrow" placeholder=options.placeholder)
                 div(class="select-arrow" id=idArrow) expand_more
             div(class="arrowDropdownMenu" id=idMenu style="width: " + options.width)
-                if options.itemMap !== undefined
-                    each val, key in options.itemMap
-                        .arrowDropdownMenuMargin
-                            //+boldText({text: "Спальни"})
+                if options.items !== undefined
+                    .arrowDropdownMenuMargin
+                        each val, key in options.items
+                            .lineItem
+                                +boldText({text: key})
+                                .dropdownButtons
+                                    +circleDropdown({text: "+"})
+                                    +boldText({text: val})
+                                    +circleDropdown({text: "-"})
         if options.arrow === "purple"
             .borderInputBox
                 input(class = "inputBoxArrow" placeholder=options.placeholder)
